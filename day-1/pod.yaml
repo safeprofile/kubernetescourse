@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: safeprofile-nginx
+  name: safeprofile-nginx-1
+spec:
+  containers:
+  - image: nginx
+    name: safeprofile-nginx
+    ports:
+    - containerPort: 80
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
